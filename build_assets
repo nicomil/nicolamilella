@@ -1,0 +1,51 @@
+#Building degli assets
+echo "Building assets, wait please..."
+
+# CSS
+echo "Deleting old css file"
+rm ./css/app.css ./css/app.min.css
+
+echo "Creating new app.css file"
+cat  ./css/bootstrap.min.css >> ./css/app.css
+cat  ./css/ionicons.min.css >> ./css/app.css
+cat  ./css/animate.css >> ./css/app.css
+cat  ./css/slider.css >> ./css/app.css
+cat  ./css/owl.carousel.css >> ./css/app.css
+cat  ./css/owl.theme.css >> ./css/app.css
+cat  ./css/jquery.fancybox.css >> ./css/app.css
+cat  ./css/main.css >> ./css/app.css
+cat  ./css/responsive.css >> ./css/app.css
+
+echo "Minifing app.css in app.min.css"
+#https://cssminifier.com/curl
+curl -X POST -s --data-urlencode 'input@css/app.css' https://cssminifier.com/raw > css/app.min.css
+
+# JS
+echo "Deleting old javascript files"
+rm ./js/app.js ./js/app.min.js
+
+echo "Creating new app.js file"
+cat ./js/vendor/modernizr-2.6.2.min.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+cat ./js/jquery.min.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+cat ./js/owl.carousel.min.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+cat ./js/bootstrap.min.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+cat ./js/wow.min.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+cat ./js/slider.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+cat ./js/jquery.fancybox.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+cat ./js/main.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+cat ./js/translation.js >> ./js/app.js
+printf "\n" >> ./js/app.js
+
+echo "Minifing app.js in app.min.js"
+#https://javascript-minifier.com/curl
+curl -X POST -s --data-urlencode 'input@js/app.js' https://javascript-minifier.com/raw > js/app.min.js
+
+echo "Completed, assets are ready!"

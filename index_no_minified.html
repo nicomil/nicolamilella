@@ -58,12 +58,17 @@
                     <div class="main-menu">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="http://nicolamilella.it" alt="Home">Home</a>
+                                <a href="http://nicolamilella.it" alt="Home">
+                                <span id="menu_home">Home</span>
+                                </a>
                             </li>
-                            <li><a class="smooth-scroll" data-wow-delay=".9s" href="#about" data-section="#about" alt="Chi sono">Chi Sono</a></li>
+                            <li><a class="smooth-scroll" data-wow-delay=".9s" href="#about" data-section="#about" alt="Chi sono" >
+                            <span id="menu_chisono">Chi Sono</span>
+                            </a></li>
                            <!--  <li><a href="#about">Chi Sono</a></li> -->
                             <!-- <li><a class="smooth-scroll" href="#works" >Che Faccio</a></li> -->
-                            <li><a class="smooth-scroll" data-wow-delay=".9s" href="#works" data-section="#works" alt="che faccio" >Che Faccio</a></li>
+                            <li><a class="smooth-scroll" data-wow-delay=".9s" href="#works" data-section="#works" alt="che faccio" >
+                            <span id="menu_chefaccio">Che Faccio</span></a></li>
                            <!--  <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
                                 <div class="dropdown-menu">
@@ -83,7 +88,10 @@
                                     </ul>
                                 </div>
                             </li> -->
-                            <li><a href="#call-to-action" alt="contatti">Contatti</a></li>
+                            <li><a href="#call-to-action" alt="contatti" >
+                            <span id="menu_contatti">Contatti</span>
+                            </a></li>
+                            <li><a id="lang" lang="it" href="#" alt="cambio lingua"><img src="images/en.png" alt="" style="width: 30px;"></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -104,7 +112,7 @@
                             <!-- Slider -->
                             <section class="cd-intro">
                                 <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
-                                <span>CIAO SONO NICOLA MILELLA E MI INTERESSO DI</span><br>
+                                <span id="main_text">CIAO SONO NICOLA MILELLA E MI INTERESSO DI</span><br>
                                  
                                 
                                 <span class="cd-words-wrapper">
@@ -129,9 +137,11 @@
                                 </section> <!-- cd-intro -->
                                 <!-- /.slider -->
                                 <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
+                                <span id='main_quote'>
                                     Vivere è la cosa più rara al mondo. La maggior parte della gente esiste, ecco tutto.(Oscar Wilde) 
+                                </span>
                                 </h2>
-                                <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#about" data-section="#about" >Conosciamoci meglio</a>
+                                <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#about" data-section="#about" ><span id="main_button">Conosciamoci meglio</span></a>
                                 
                             </div>
                         </div>
@@ -148,25 +158,32 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
                                 <h2>
-                                CHI SONO
+                                <span id="chisono_title">CHI SONO</span>
                                 </h2>
                                 <p style="text-align: justify;">
+                                <span id="chisono_text_p1">
                                     Ciao sono Nico aka Nicomil, la mia vita è un arcobaleno perchè fatta di tanti colori!<br>Lavoro come sviluppatore web full stack e trainer nel settore dell'innovazione digitale trasmettendo passione e valori nei percorsi scolastici in cui ho l'onere e l'onore di insegnare.
                                     Vicino ai principi del manifesto agile e convinto che il pensiero computazionale ti dà quella marcia in più sul lavoro e nella vita!
+                                </span>
                                 </p>
                                 <p style="text-align: justify;">
+                                <span id="chisono_text_p2">
                                     Sono istruttore di JuJitsu e Difesa Personale, di questi tempi la sicurezza non è mai abbastanza.
                                     Da qualche anno vivo con una tavola sotto i piedi, che sia uno skateboard, snowboard, sup, surf, non importa!
+                                </span>
                                 </p>
                                 <p style="text-align: justify;">
+                                <span id="chisono_text_p3">
                                     Il mio campo base è Bari, ma ogni occasione è buona per evadere alla scoperta di cose nuove anche perchè le radici sono importanti nella vita di un uomo, ma noi uomini abbiamo le gambe, non le radici, e le gambe sono fatte per andare altrove.
+                                </span>
                                 </p>
                             </div>
                             
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <img src="images/about/about_me2.png" alt="Nicola Milella nelle sue attività di sviluppatore web, istruttore di JuJitsu e difesa personale, stand up paddle, surf, skateboard e snowboard" style="vertical-align: middle;"><p><strong>Questo sito è il mio bigliettino da visita, basta con lo spreco di carta!</strong></p>
+                                <img src="images/about/about_me2.png" alt="Nicola Milella nelle sue attività di sviluppatore web, istruttore di JuJitsu e difesa personale, stand up paddle, surf, skateboard e snowboard" style="vertical-align: middle;"><p><strong>
+                                <span id="chisono_card">Questo sito è il mio bigliettino da visita, basta con lo spreco di carta!</span></strong></p>
                             </div>
 
                         </div>
@@ -180,10 +197,12 @@
             <section id="works" class="works">
                 <div class="container">
                     <div class="section-heading">
-                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Cosa faccio, al momento!</h1>
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s"><span id="cosafaccio_title">Cosa faccio, al momento!</span></h1>
                         
                         <p class="wow fadeInDown" data-wow-delay=".5s">
+                        <span id="cosafaccio_text">
                            In qualunque contesto, mi trovo sempre a lavorare per la sensibilizzazione di qualche ideale, concetto e pratica.<br> Amo insegnare perchè è il miglior modo di imparare e crescere.
+                        </span>
                         </p>
                     </div>
                     <div class="row">
@@ -201,11 +220,15 @@
                                 <figcaption>
                                 <h4>
                                 <a href="http://www.hack-ademy.it">
-                                    Hack-Ademy by auLAB
+                                    <span id="cosafaccio_1_title">Hack-Ademy by auLAB
+                                    </span>
                                 </a>
                                 </h4>
                                 <p>
-                                    Coding Bootcamp - Web Development 
+                                    <span id="cosafaccio_1_text">
+                                        Coding Bootcamp - Sviluppo Web
+                                        
+                                    </span>
                                 </p>
                                 </figcaption>
                             </figure>
@@ -224,12 +247,16 @@
                                 <figcaption>
                                 <h4>
                                 <a href="http://www.professioneautodifesa.it">
-                                Professione Autodifesa
+                                <span id="cosafaccio_2_title">
+                                    Professione Autodifesa
+                                </span>
                                     
                                 </a>
                                 </h4>
                                 <p>
+                                <span id="cosafaccio_2_text">
                                     Scuola di Sicurezza e Difesa Personale
+                                </span>
                                 </p>
                                 </figcaption>
                             </figure>
@@ -248,11 +275,16 @@
                                 <figcaption>
                                 <h4>
                                 <a href="https://www.facebook.com/suponthebeach/">
-                                    Sup on The Beach
+                                    <span id="cosafaccio_3_title">
+                                        Sup on The beach
+                                    </span>
+                                    
                                 </a>
                                 </h4>
                                 <p>
+                                <span id="cosafaccio_3_text">
                                     Escursioni - sport acquatici
+                                </span>
                                 </p>
                                 </figcaption>
                             </figure>
@@ -273,11 +305,18 @@
                                 <figcaption>
                                 <h4>
                                 <a href="http://www.istruzione.it/alternanza/index.shtml">
+                                <span id="cosafaccio_4_title">
                                     Alternanza Scuola Lavoro
+                                </span>
+                                    
                                 </a>
                                 </h4>
                                 <p>
-                                    Percorsi tecnici di alternanza scuola lavoro nelle scuole superiori
+                                <span id="cosafaccio_4_text">
+                                     Percorsi tecnici di alternanza scuola lavoro nelle scuole superiori
+                                </span>
+
+                                   
                                 </p>
                                 </figcaption>
                             </figure>
@@ -296,11 +335,19 @@
                                 <figcaption>
                                 <h4>
                                 <a href="https://www.borderline24.com/2017/07/16/bari-tech-summer-campus-sviluppatori-web-entra-nel-vivo/" target="_blank">
-                                    Tech Summer Campus
+                                <span id="cosafaccio_5_title">
+                                     Tech Summer Campus
+                                </span>
+
+                                   
                                 </a>
                                 </h4>
                                 <p>
-                                    Coding Bootcamp powerd by Randstad Technologies
+                                <span id="cosafaccio_5_text">
+                                    Coding Bootcamp by Randstad Technologies
+                                </span>
+
+                                    
                                 </p>
                                 </figcaption>
                             </figure>
@@ -308,13 +355,25 @@
 
                         </div>
                         <div class="col-sm-12 text-center">
-                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Un po' di storia</h1>
-                            <p class="wow fadeInLeft animated portfolio-item" style="text-align: justify;">Laureato in Informatica Magistrale a Bari nel 2013, inizio a lavorare sin dal 2012 come vincitore del bando Pon R&C con il progetto <strong>MeetingPoints</strong> nel meraviglioso spazio di coworking <a href="https://bari.impacthub.net/">Impact Hub Bari</a>, un periodo indimenticabile durante il quale sono cresciuto tanto sia personalmente che professionalemente. Merito particolare di questa mia crescita professionale va al "Coach" <a href="https://it.linkedin.com/in/giancarlovalente"> Giancarlo Valente</a> con il quale ora ho il piacere di lavorare nei coding bootcamp.
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">
+                        <span id="cosafaccio_story_title">
+                            Un po' di storia
+                        </span>
+                        
+                        </h1>
+                            <p class="wow fadeInLeft animated portfolio-item" style="text-align: justify;">
+                            <span id="cosafaccio_story_text">
+                            Laureato in Informatica Magistrale a Bari nel 2013, inizio a lavorare sin dal 2012 come vincitore del bando Pon R&C con il progetto <strong>MeetingPoints</strong> nel meraviglioso spazio di coworking <a href="https://bari.impacthub.net/">Impact Hub Bari</a>, un periodo indimenticabile durante il quale sono cresciuto tanto sia personalmente che professionalemente. Merito particolare di questa mia crescita professionale va al "Coach" <a href="https://it.linkedin.com/in/giancarlovalente"> Giancarlo Valente</a> con il quale ora ho il piacere di lavorare nei coding bootcamp.
                             Nel frattempo formatore ed esaminatore <a href="https://it.eipass.com/">Eipass</a> tenendo corsi di informatica in scuole, enti e centri di formazione di tutta Puglia.<br>
                             Le arti marziali invece hanno migliorato la mia vita, fin dalla tenera età di 8 anni! Judo, Karate e infine JuJitsu per completare il bagaglio tecnico e culturale. Prima cintura nera di JuJitsu Wjjko a Bari nel 2002 con esame preparato duramente con mio padre, maestro di JuJitsu, e sostenuto al cospetto del Soke <a href="https://it.wikipedia.org/wiki/Robert_Clark_(maestro_di_arti_marziali)">Robert Clark</a>, padre fondatore del JuJitsu moderno, passato a miglior vita prematuramente nel 2012. Ad oggi, sebbene Istruttore e cintura nera 4° Dan con più di 20 anni di esperienza, continuo umilmente a praticare e trasmettere questa grande passione.
+                            </span>
                             </p>
                             <p class="text-center">
-                            Non amo i CV ma aimè ne ho uno anch'io, in formato europeo <i class="ion-thumbsdown"></i> <a href="CV_nicola_milella_IT.pdf" target="_blank">Dai un'occhiata</a></p>
+                            <span id="cosafaccio_cv">
+                                Non amo i CV ma aimè ne ho uno anch'io, in formato europeo 
+                            </span>
+                            <i class="ion-thumbsdown"></i> <a id="cv_link" href="CV_nicola_milella_IT.pdf" target="_blank" class="btn btn-primary" style="background-color: #02bdd5;border-radius: 0px;border-color:#02bdd5; ">
+                            <span id="cosafaccio_cv_button">Dai un'occhiata</span></a></p>
                         </div>
                 </div>
             </section> <!-- #works -->
@@ -325,9 +384,11 @@
             <section id="feature">
                 <div class="container">
                     <div class="section-heading">
-                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">In cosa posso esserti utile?</h1>
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s"><span id="possofare_title">In cosa posso esserti utile?</span></h1>
                         <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Nella mia vita ho maturato diverse competenze in svariati ambiti<br> e sono sempre pronto a mettermi in gioco.
+                            <span id="possofare_text">
+                                Nella mia vita ho maturato diverse competenze in svariati ambiti<br> e sono sempre pronto a mettermi in gioco.
+                            </span>
                         </p>
                     </div>
                     <div class="row">
@@ -339,8 +400,14 @@
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Sviluppo Software</h4>
-                                    <p>Realizzazione progetti web come siti, piattaforme, web app </p>
+                                    <h4 class="media-heading">
+                                    <span id="possofare_1_title">
+                                        Sviluppo Software
+                                    </span></h4>
+                                    <p>
+                                    <span id="possofare_1_text">
+                                        Realizzazione progetti web come siti, piattaforme, web app
+                                    </span></p>
                                 </div>
                             </div>
                         </div>
@@ -352,8 +419,12 @@
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Consulenza</h4>
-                                    <p>Supporto pratico e metodologico a progetti software</p>
+                                    <h4 class="media-heading">
+                                    <span id="possofare_2_title">
+                                        Consulenza
+                                    </span></h4>
+                                    <p>
+                                    <span id="possofare_2_text">Supporto pratico e metodologico a progetti software</span></p>
                                 </div>
                             </div>
                         </div>
@@ -365,8 +436,14 @@
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Difesa Personale</h4>
-                                    <p>Difendersi è importante, posso mostrarti il cammino da seguire</p>
+                                    <h4 class="media-heading">
+                                    <span id="possofare_3_title">
+                                        Difesa Personale
+                                    </span></h4>
+                                    <p>
+                                    <span id="possofare_3_text">
+                                        Difendersi è importante, posso mostrarti il cammino da seguire
+                                    </span></p>
                                 </div>
                             </div>
                         </div>
@@ -378,8 +455,14 @@
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Arti Marziali</h4>
-                                    <p>Corsi e lezioni private di JuJitsu antico e/o sportivo</p>
+                                    <h4 class="media-heading">
+                                    <span id="possofare_4_title">
+                                        Arti Marziali
+                                    </span></h4>
+                                    <p>
+                                    <span id="possofare_4_text">
+                                        Corsi e lezioni private di JuJitsu antico e/o sportivo
+                                    </span></p>
                                 </div>
                             </div>
                         </div>
@@ -391,8 +474,14 @@
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Sport Acquatici</h4>
-                                    <p>Eventi ed escursioni in SUP sul nostro territorio</p>
+                                    <h4 class="media-heading">
+                                    <span id="possofare_5_title">
+                                        Sport Acquatici
+                                    </span></h4>
+                                    <p>
+                                    <span id="possofare_5_text">
+                                        Eventi ed escursioni in SUP sul nostro territorio
+                                    </span></p>
                                 </div>
                             </div>
                         </div>
@@ -404,8 +493,14 @@
                                     </div>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Qualcosa che imparerò</h4>
-                                    <p>Non si finisce mai di imparare, vedremo!</p>
+                                    <h4 class="media-heading">
+                                    <span id="possofare_6_title">
+                                        Qualcosa che imparerò
+                                    </span></h4>
+                                    <p>
+                                    <span id="possofare_6_text">
+                                        Non si finisce mai di imparare, vedremo!
+                                    </span></p>
                                 </div>
                             </div>
                         </div>
@@ -422,9 +517,18 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">ORA SAI UN BEL PO' DI ME, MA NON TUTTO!</h2>
-                                <h3 class="subtitle wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">"L'essenziale è invisibile ai social"</h3>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Hai un'idea, una richiesta, un problema o vuoi semplicemente fare una chiacchierata? Contattami, ti aspetto con piacere!</p>
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <span id="contatti_title">
+                                    ORA SAI UN BEL PO' DI ME, MA NON TUTTO!
+                                </span></h2>
+                                <h3 class="subtitle wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <span id="contatti_quote">
+                                    "L'essenziale è invisibile ai social"
+                                </span></h3>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+                                <span id="contatti_text">
+                                    Hai un'idea, una richiesta, un problema o vuoi semplicemente fare una chiacchierata? Contattami, ti aspetto con piacere!
+                                </span></p>
                                 <!-- <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contattami</a> -->
                             </div>
                         </div>
@@ -494,7 +598,6 @@
         ================================================== -->
         <!-- modernizr js -->
         <script src="js/app.min.js"></script>
-        
         </body>
 
 </html>
