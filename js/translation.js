@@ -1,11 +1,13 @@
 $( document ).ready(function() {
-
+// if(navigator.language != "it"){
+//   switch_lang("en");
+// }
 var trans = [];
 var trans_en = {"menu_home":"Home",
                "menu_chisono":"Who I Am",
                "menu_chefaccio":"What I Do",
                "menu_contatti":"Contacts",
-               "main_text":"Hi, I Am Nicola Miella and I love",
+               "main_text":"Hi, I Am Nico and I love",
                "main_quote":"Experience is simply the name we give our mistakes. (Oscar Wilde)",
                "main_button":"Know me better",
                "chisono_title":"Who I am",

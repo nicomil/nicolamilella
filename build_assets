@@ -16,7 +16,7 @@ cat  ./css/jquery.fancybox.css >> ./css/app.css
 cat  ./css/main.css >> ./css/app.css
 cat  ./css/responsive.css >> ./css/app.css
 
-echo "Minifing app.css in app.min.css"
+echo "Minifying app.css in app.min.css"
 #https://cssminifier.com/curl
 curl -X POST -s --data-urlencode 'input@css/app.css' https://cssminifier.com/raw > css/app.min.css
 
@@ -43,8 +43,11 @@ cat ./js/main.js >> ./js/app.js
 printf "\n" >> ./js/app.js
 cat ./js/translation.js >> ./js/app.js
 printf "\n" >> ./js/app.js
+cat ./js/close_menu.js >> ./js/app.js
+printf "\n" >> ./js/app.js
 
-echo "Minifing app.js in app.min.js"
+
+echo "Minifying app.js in app.min.js"
 #https://javascript-minifier.com/curl
 curl -X POST -s --data-urlencode 'input@js/app.js' https://javascript-minifier.com/raw > js/app.min.js
 
